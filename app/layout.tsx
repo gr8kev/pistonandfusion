@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import NavScrollExample from "./components/Header/Navbar";
+import Footer from "./components/Footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const beVietnam = Be_Vietnam_Pro({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-be-vietnam",
+  weight: ["400", "500", "600", "700"], // include weights you’ll use
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,11 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <NavScrollExample />
+      <body className={`${beVietnam.variable} antialiased`}>{children}</body>
+      <Footer />
     </html>
   );
 }
