@@ -61,7 +61,7 @@ const Blog: React.FC = () => {
           ))}
         </div>
         <div className="text-center">
-          <Link href="/blog" className="btn btn-outline-primary  btn-lg  ">
+          <Link href="/blog" className="btn btn-outline-primary text-light   ">
             Go to Blog
           </Link>
         </div>
