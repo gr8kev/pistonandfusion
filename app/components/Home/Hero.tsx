@@ -195,7 +195,7 @@ export default function Hero() {
         }
 
         :global(.slick-dots li.slick-active button) {
-          background: #28a745;
+          background: #0e5ed8;
           transform: scale(1.2);
         }
 

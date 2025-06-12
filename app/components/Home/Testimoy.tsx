@@ -74,7 +74,7 @@ const Testimony: React.FC = () => {
           ))}
         </Carousel>
 
-        <h3 className=" mb-3">Our Accredited Clients</h3>
+        <div className=" mb-3 fs-4">Our Accredited Clients</div>
 
         <div className="logo-strip">
           <div className="logo-track">
