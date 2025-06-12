@@ -1,4 +1,5 @@
 import About from "./components/Home/About";
+import Blog from "./components/Home/Blog";
 import Counter from "./components/Home/Counter";
 import Courses from "./components/Home/Courses";
 import Hero from "./components/Home/Hero";
@@ -16,6 +17,7 @@ export default function Page() {
       <Partners />
       <Counter />
       <Testimony />
+      <Blog />
     </div>
   );
 }
